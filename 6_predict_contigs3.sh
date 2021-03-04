@@ -1,0 +1,13 @@
+funannotate predict \
+	-i assembly.fa.masked \
+	-o contigs3 \
+	-s "Stonefly" \
+	--name "SFLY2_" \
+	--augustus_species "stonefly" \
+	--busco_seed_species stonefly \
+	--busco_db insecta \
+	--optimize_augustus \
+	--organism other \
+	--max_intronlen 60000 \
+	--cpus 64 \
+	--keep_evm
